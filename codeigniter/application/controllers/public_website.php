@@ -46,7 +46,7 @@ class Public_website extends CI_Controller {
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/nav');
-
+		$this->load->view('public_website/what_we_do_page');
 		$this->load->view('templates/footer');
 	}
 

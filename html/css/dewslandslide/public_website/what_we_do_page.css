@@ -1,0 +1,63 @@
+.team-menu-container {
+	text-align: center;
+}
+
+.container-fluid {
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.thumbnail-wrapper {
+	height: 250px;
+	width: 300px;
+}
+
+.data-preview-panel,.infra-preview-panel,.comm-preview-panel,.admin-preview-panel {
+	display: none;
+	color: white;
+}
+
+.data-preview-panel {
+	background-color: #99291e;
+	position: absolute;
+}
+
+.infra-preview-panel {
+	background-color: #18516c;
+	position: absolute;
+}
+
+.admin-preview-panel {
+	background-color: #346634;
+	position: absolute;
+}
+
+.comm-preview-panel {
+	background-color: #f69830;
+	position: absolute;
+}
+
+.highlight-text {
+	font-weight: bold; 
+}
+
+.image > .thumbnail-wrapper {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+  	-moz-transition: all 1s ease; /* Firefox */
+  	-o-transition: all 1s ease; /* IE 9 */
+  	-ms-transition: all 1s ease; /* Opera */
+  	transition: all 1s ease;
+}
+
+.image > .thumbnail-wrapper:hover{
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}

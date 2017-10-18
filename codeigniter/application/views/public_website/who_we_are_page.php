@@ -54,13 +54,11 @@
 			<p><b>Envisioning disaster-resilient communities begins with disaster preparedness. Early warning systems help ensure that the vulnerable are safe even before a disasster strikes. By working together and learning from one another, the Dynaslope project moves forward towards this goal.</b></p>
 			<br>
 		</div>
-		<div class="row row-padding">
-			<img src="/images/stock_images/video.png" alt="community_video">
+		<br><br>
+		<div class="row row-padding video-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/FdGrkoWxYS0" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<div class="row">
-			
-		</div>
-		<div class="row">
+		<div class="row stylish-typeface">
 			
 		</div>
 	</div>
