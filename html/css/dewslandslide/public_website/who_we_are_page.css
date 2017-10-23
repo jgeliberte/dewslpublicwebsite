@@ -20,3 +20,9 @@ img {
 .video-container {
 	text-align: center;
 }
+
+.stylish-typeface {
+	font-size: 300%;
+	font-style: oblique;
+	font-family: serif;
+}
