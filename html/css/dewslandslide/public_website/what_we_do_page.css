@@ -62,7 +62,8 @@ img {
      transform:scale(1.25);
 }
 
-.desciption-panel {
+.description-panel {
 	max-width: 500px;
 	padding: 20px;
+	border-radius: 20px;
 }
