@@ -59,7 +59,26 @@
 		</div>
 		<br>
 		<div class="row row-padding video-container">
-			<iframe width="700" height="455" src="https://www.youtube.com/embed/FdGrkoWxYS0" frameborder="0" allowfullscreen></iframe>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <iframe src="https://player.vimeo.com/video/193658031" width="700" height="455" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			    </div>
+
+			    <div class="item">
+			      <iframe src="https://player.vimeo.com/video/194797486" width="700" height="455" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			    </div>
+			  </div>
+			  <!-- Left and right controls -->
+			  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
 			<br><br><br>
 		</div>
 		<div class="row row-padding stylish-typeface">
