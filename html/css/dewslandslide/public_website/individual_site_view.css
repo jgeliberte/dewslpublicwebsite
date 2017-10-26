@@ -1,0 +1,111 @@
+/****
+ *
+ *	Created by Kevin Dhale dela Cruz
+ *	CSS file for Individual Site Pages
+ *	
+****/
+#page-wrapper {
+  margin-top: 20px;
+  padding: 30px 10px 50px;
+  min-height: 100%;
+  position: relative; }
+
+#page-header {
+  font-size: 25px;
+  font-weight: 600;
+  color: #17526D;
+  border: solid #17526D;
+  border-radius: 6px;
+  margin-bottom: 40px; }
+
+.nav.nav-tabs.nav-justified {
+  padding-bottom: 50px;
+  font-size: 16px; }
+  .nav.nav-tabs.nav-justified li > a {
+    border-bottom: 2px solid #17526D;
+    border-radius: 8px 8px 0 0; }
+  .nav.nav-tabs.nav-justified .active > a, .nav.nav-tabs.nav-justified .active > a:hover, .nav.nav-tabs.nav-justified .active > a:focus {
+    border: 2px solid #17526D;
+    background-color: #99d0ea; }
+
+.panel.panel-primary .panel-heading {
+  background-color: #17526D;
+  border: solid #17526D; }
+  .panel.panel-primary .panel-heading .panel-title > a {
+    display: block;
+    text-decoration: none; }
+.panel.panel-primary .panel-collapse > .panel-body {
+  font-size: 14px; }
+
+.container-line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 3px;
+  background-color: #17526D;
+  position: relative; }
+  .container-line.timeline-head {
+    margin-top: 30px;
+    margin-bottom: 50px; }
+  .container-line.tab-head {
+    margin-top: 40px;
+    margin-bottom: 70px; }
+  .container-line.section-head {
+    margin-top: 50px;
+    margin-bottom: 60px; }
+
+.circle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  background-color: #17526D;
+  border: solid 1px #17526D;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px; }
+
+.left {
+  left: 0; }
+
+.right {
+  right: 0; }
+
+.container-line-text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #17526D;
+  border: solid 3px #17526D;
+  border-radius: 6px;
+  position: absolute;
+  background-color: white; }
+  .container-line-text.year {
+    font-size: 14px;
+    padding: 0 5px;
+    top: -13px;
+    left: calc(50% - 22px); }
+  .container-line-text.timeline-head-text {
+    top: -18px;
+    left: calc(50% - 104px); }
+  .container-line-text.tab-head-text {
+    top: -33px; }
+  .container-line-text.section-head-text {
+    top: -18px; }
+
+.base-section-div-text, .container-line-text.timeline-head-text, .container-line-text.tab-head-text, .container-line-text.section-head-text {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 0 10px; }
+
+#map {
+  max-width: 100%;
+  border: 1px solid #000;
+  margin-bottom: 10px; }
+
+#images-field > div.row {
+  margin-bottom: 10px; }
+
+.thumbnail-gallery > a > img {
+  max-width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=individual_site_view.css.map */

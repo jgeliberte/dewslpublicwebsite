@@ -43,7 +43,8 @@
  */
 
 $route['home'] = "public_website/index";
-$route['sites'] = "public_website/sample_site";
+$route['sites'] = "public_website/site_list";
+$route['sites/(:any)'] = "public_website/individual_site/$1";
 $route['what-we-do'] = "public_website/what_we_do";
 $route['who-we-are'] = "public_website/who_we_are";
 $route['where-we-work'] = "public_website/where_we_work";

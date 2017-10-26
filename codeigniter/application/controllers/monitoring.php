@@ -103,7 +103,14 @@ class Monitoring extends CI_Controller
 
 	public function getSites()
 	{
-		$data = $this->monitoring_model->getSites();
+		$filter = [];
+		if( isset($_GET['filter']) ) {
+			foreach ($_GET['filter'] as $key ) {
+				$filter[ $key[0] ] = $key[1];
+			}
+		} else $filter = null;
+
+		$data = $this->monitoring_model->getSites($filter);
 		echo "$data";
 	}
 
