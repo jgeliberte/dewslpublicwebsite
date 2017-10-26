@@ -27,36 +27,30 @@ class Monitoring_Model extends CI_Model
 		return json_encode($query->result_array());
 	}
 
-	public function getSites()
+	public function getSites($where = null)
 	{
-		$sql = "SELECT id, name, sitio, barangay, municipality, province, season 
-				FROM site 
-				ORDER BY name ASC";
-
-		$query = $this->db->query($sql);
-
+		$this->db->select("id, name, sitio, barangay, municipality, province, season");
+		$this->db->from("site");
+		if( !is_null($where) ) $this->db->where($where);
+		$this->db->order_by("name", "ASC");
+		$query = $this->db->get();
+		$result = $query->result_array();
+		
 		$i = 0;
-	    foreach ($query->result_array() as $row)
+	    foreach ( $result as $row )
 	    {
 	    	$sitio = $row["sitio"];
 	        $barangay = $row["barangay"];
 	        $municipality = $row["municipality"];
 	        $province = $row["province"];
 
-	        if ($sitio == null) {
-	          $address = "$barangay, $municipality, $province";
-	        } 
-	        else {
-	          $address = "$sitio, $barangay, $municipality, $province";
-	        }
+	        $x = is_null($sitio) ? "" : $sitio . ", ";
+	        $address = $x . "$barangay, $municipality, $province";
 
-	        $site[$i]["id"] = $row["id"];
-	        $site[$i]["name"] = $row["name"];
-	        $site[$i]["season"] = $row["season"];
-	        $site[$i++]["address"] = $address;
+	        $result[$i++]['address'] = $address;
 	    }
 
-	    	return json_encode($site);
+	    return json_encode($result);
 	}
 
 	/**
