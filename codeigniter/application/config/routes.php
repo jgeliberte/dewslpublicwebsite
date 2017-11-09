@@ -52,5 +52,7 @@ $route['where-we-work'] = "public_website/where_we_work";
 $route['default_controller'] = "public_website/index";
 $route['404_override'] = '';
 
+$route['public_website/data_analysis/(:any)'] = "data_analysis_controller";
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
