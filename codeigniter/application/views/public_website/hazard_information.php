@@ -16,7 +16,7 @@
     </div>
 </div> -->
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-sm-12 text-center">
         <div class="container-line tab-head">
             <span class="circle left"></span>
@@ -27,11 +27,25 @@
             <span class="circle right"></span>
         </div>
     </div>
+</div> -->
+
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <div class="container-line tab-head">
+            <span class="circle left"></span>
+            <div class="container-line-text section-head-text">
+               Hazard Map
+            </div>
+            <span class="circle right"></span>
+        </div>
+    </div>
 </div>
 
 <div class="row">
     <div class="col-sm-12">
-        <img id="map" src="/../../images/sample-pic.png" class="img-fluid" alt="Responsive image">
+        <a href="/../../images/hazard_information/maps/<?php echo $site->code; ?>.jpg" data-toggle="lightbox" data-footer="Scroll in image to zoom in/out">
+            <img id="map" src="/../../images/hazard_information/maps/<?php echo $site->code; ?>.jpg" class="img-fluid" alt="Responsive image">
+        </a>
     </div>
 </div>
 
@@ -71,35 +85,25 @@
 </div>
 
 <div id="images-field">
-    <div class="row">
-        <div class="thumbnail-gallery">
-            <a href="/../../images/sample/image-1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="/../../images/sample/image-1.jpg" class="img-fluid">
-            </a>
-        </div>
-        <div class="thumbnail-gallery">
-            <a href="/../../images/sample/image-2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="/../../images/sample/image-2.jpg" class="img-fluid">
-            </a>
-        </div>
-        <div class="thumbnail-gallery">
-            <a href="/../../images/sample/image-3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="/../../images/sample/image-3.jpg" class="img-fluid">
-            </a>
-        </div>
-        <div class="thumbnail-gallery">
-            <a href="/../../images/sample/image-5.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="/../../images/sample/image-5.jpg" class="img-fluid">
-            </a>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="thumbnail-gallery">
-            <a href="/../../images/sample/image-4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="/../../images/sample/image-4.jpg" class="img-fluid">
-            </a>
-        </div>
-    </div>
+    <?php if(is_null($features_pic) || count($features_pic) == 0 ): ?>
+        <div class="row"><div class="col-sm-12 text-center">No images available</div></div>        
+    <?php else: ?>
+        <?php $count = 0; ?>
+        <?php foreach( $features_pic as $pic ): ?>
+            <?php if( $count % 4 == 0 ): ?> <div class="row"> <?php endif; ?>
+
+            <?php $filename = str_replace(" ", "%20",  $pic); ?>
+            <div class="thumbnail-gallery">
+                <a href="/../../images/hazard_information/landslide_features/<?php echo $site->code . '/' . $filename; ?>" data-toggle="lightbox" data-gallery="example-gallery" data-title="<?php echo str_replace(".JPG", "", $pic); ?>" data-footer="Scroll in image to zoom in/out" class="col-sm-3">
+                    <img src="/../../images/hazard_information/landslide_features/<?php echo $site->code . '/thumbnails/' . $filename; ?>" class="img-fluid">
+                </a>
+            </div>
+
+            <?php if( $count % 4 == 3 || $count + 1 == count($features_pic) ): ?> </div> <?php endif; ?>
+            <?php $count++; ?>
+        <?php endforeach; ?>
+    <?php endif; ?>
+
 </div>
 
