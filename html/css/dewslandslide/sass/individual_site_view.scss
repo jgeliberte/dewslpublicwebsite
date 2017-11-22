@@ -83,8 +83,8 @@
     }
 
     &.tab-head {
-        margin-top: 40px;
-        margin-bottom: 70px;
+        margin-top: 30px;
+        margin-bottom: 60px;
     }
 
     &.section-head {
@@ -152,6 +152,16 @@
 
 //===== END OF Line Divs
 
+.popover { 
+    color: black; 
+
+    .popover-title {
+        background-color: $primary-blue;
+        border-color: $primary-blue;
+        color: white;
+    }
+}
+
 #map {
     max-width: 100%;
     border: 1px solid #000;
@@ -165,4 +175,7 @@
 .thumbnail-gallery > a > img {
     max-width: 100%;
     height: auto;
+    border: 1px solid black;
 }
+
+.ekko-lightbox .modal-footer { text-align: right !important; }

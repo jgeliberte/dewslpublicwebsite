@@ -29,7 +29,7 @@ class Monitoring_Model extends CI_Model
 
 	public function getSites($where = null)
 	{
-		$this->db->select("id, name, sitio, barangay, municipality, province, season");
+		$this->db->select("id, name, name AS code, sitio, barangay, municipality, province, season");
 		$this->db->from("site");
 		if( !is_null($where) ) $this->db->where($where);
 		$this->db->order_by("name", "ASC");
