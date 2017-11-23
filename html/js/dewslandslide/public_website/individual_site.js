@@ -8,7 +8,9 @@
 
 $(document).ready(function () {
 
-    $('[data-toggle="popover"]').popover(); 
+    $('[data-toggle="popover"]').popover({
+    	container: '#page-wrapper'
+    }); 
 
     $(".tab-head-text, .section-head-text").each( function (index, elem) {
         let outerWidth = getWidth($(elem));
