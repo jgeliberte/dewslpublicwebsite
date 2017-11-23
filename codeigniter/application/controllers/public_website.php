@@ -91,109 +91,109 @@ class Public_website extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
-	// public function upload()
-	// {	
-	// 	$array = array(
-	// 		'activity_id' => 4,
-	// 		'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate justo sed tortor sodales, id porttitor velit euismod. Nullam tristique nibh ac feugiat placerat. Suspendisse nunc tortor, egestas at magna ac, ornare pulvinar velit. Aenean vulputate imperdiet mi et rhoncus. Vestibulum accumsan tortor ac arcu luctus rhoncus non eu ligula. Etiam vestibulum rhoncus libero, ut mattis orci aliquet quis. Sed iaculis convallis ligula blandit aliquam. Quisque sed leo dapibus, tristique erat ut, dictum magna. Maecenas vitae nunc feugiat, ultrices nisi vel, aliquam sapien. Integer sit amet condimentum elit. Vestibulum cursus faucibus arcu non maximus. Donec ex nisl, finibus eu aliquet quis, feugiat et arcu. Vivamus euismod nunc ultricies, accumsan felis eu, finibus turpis. Sed eget rutrum dui, sed ullamcorper diam.',
-	// 		'staff_id' => 37,
-	// 		// 'start_date' => '2015-12-10',
-	// 		// 'end_date' => '2015-12-12'
-	// 	);
+	/*public function upload()
+	{	
+		$array = array(
+			'activity_id' => 4,
+			'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate justo sed tortor sodales, id porttitor velit euismod. Nullam tristique nibh ac feugiat placerat. Suspendisse nunc tortor, egestas at magna ac, ornare pulvinar velit. Aenean vulputate imperdiet mi et rhoncus. Vestibulum accumsan tortor ac arcu luctus rhoncus non eu ligula. Etiam vestibulum rhoncus libero, ut mattis orci aliquet quis. Sed iaculis convallis ligula blandit aliquam. Quisque sed leo dapibus, tristique erat ut, dictum magna. Maecenas vitae nunc feugiat, ultrices nisi vel, aliquam sapien. Integer sit amet condimentum elit. Vestibulum cursus faucibus arcu non maximus. Donec ex nisl, finibus eu aliquet quis, feugiat et arcu. Vivamus euismod nunc ultricies, accumsan felis eu, finibus turpis. Sed eget rutrum dui, sed ullamcorper diam.',
+			'staff_id' => 37,
+			// 'start_date' => '2015-12-10',
+			// 'end_date' => '2015-12-12'
+		);
 
-	// 	$list = array(
-	// 		0 => array(
-	// 			'site_id' => 36,
-	// 			'start_date' => '2016-02-29',
-	// 			'end_date' => '2016-03-01'
-	// 		),
-	// 		1 => array(
-	// 			'site_id' => 41,
-	// 			'start_date' => '2016-02-26',
-	// 			'end_date' => '2016-02-27'
-	// 		),
-	// 		2 => array(
-	// 			'site_id' => 42,
-	// 			'start_date' => '2016-02-15',
-	// 			'end_date' => '2016-02-16'
-	// 		), 
-	// 		3 => array(
-	// 			'site_id' => 43,
-	// 			'start_date' => '2016-02-26',
-	// 			'end_date' => NULL
-	// 		),
-	// 		// 4 => array(
-	// 		// 	'site_id' => 25,
-	// 		// 	'start_date' => '2016-06-27',
-	// 		// 	'end_date' => '2016-06-29'
-	// 		// ), 
-	// 		5 => array(
-	// 			'site_id' => 45,
-	// 			'start_date' => '2016-06-05',
-	// 			'end_date' => NULL
-	// 		),
-	// 		// 6 => array(
-	// 		// 	'site_id' => 28,
-	// 		// 	'start_date' => '2016-02-19',
-	// 		// 	'end_date' => '2016-02-20'
-	// 		// ),
-	// 		7 => array(
-	// 			'site_id' => 46,
-	// 			'start_date' => '2016-03-30',
-	// 			'end_date' => NULL
-	// 		),
-	// 		8 => array(
-	// 			'site_id' => 47,
-	// 			'start_date' => '2016-02-20',
-	// 			'end_date' => NULL
-	// 		),
-	// 		9 => array(
-	// 			'site_id' => 48,
-	// 			'start_date' => '2016-03-15',
-	// 			'end_date' => NULL
-	// 		),
-	// 		10 => array(
-	// 			'site_id' => 49,
-	// 			'start_date' => '2016-02-25',
-	// 			'end_date' => NULL
-	// 		),
-	// 		11 => array(
-	// 			'site_id' => 50,
-	// 			'start_date' => '2016-02-18',
-	// 			'end_date' => NULL
-	// 		),
-	// 		// 12 => array(
-	// 		// 	'site_id' => 37,
-	// 		// 	'start_date' => '2016-04-04',
-	// 		// 	'end_date' => NULL
-	// 		// ),
-	// 		// 13 => array(
-	// 		// 	'site_id' => 38,
-	// 		// 	'start_date' => '2016-03-30',
-	// 		// 	'end_date' => NULL
-	// 		// ),
-	// 		// 14 => array(
-	// 		// 	'site_id' => 39,
-	// 		// 	'start_date' => '2016-02-10',
-	// 		// 	'end_date' => NULL
-	// 		// ),
-	// 		// 15 => array(
-	// 		// 	'site_id' => 40,
-	// 		// 	'start_date' => '2016-03-30',
-	// 		// 	'end_date' => NULL
-	// 		// )
-	// 	);
+		$list = array(
+			0 => array(
+				'site_id' => 7,
+				'start_date' => '2014-05-14',
+				'end_date' => '2014-05-15'
+			),
+			1 => array(
+				'site_id' => 8,
+				'start_date' => '2014-05-16',
+				'end_date' => '2014-05-17'
+			),
+			2 => array(
+				'site_id' => 13,
+				'start_date' => '2014-05-05',
+				'end_date' => '2014-05-06'
+			), 
+			3 => array(
+				'site_id' => 14,
+				'start_date' => '2014-05-08',
+				'end_date' => '2014-05-09'
+			),
+			4 => array(
+				'site_id' => 20,
+				'start_date' => '2014-04-26',
+				'end_date' => '2014-04-27'
+			), 
+			5 => array(
+				'site_id' => 28,
+				'start_date' => '2014-03-18',
+				'end_date' => '2014-03-19'
+			),
+			6 => array(
+				'site_id' => 36,
+				'start_date' => '2014-05-09',
+				'end_date' => '2014-05-10'
+			),
+			7 => array(
+				'site_id' => 41,
+				'start_date' => '2014-05-06',
+				'end_date' => '2014-05-07'
+			),
+			8 => array(
+				'site_id' => 42,
+				'start_date' => '2014-03-18',
+				'end_date' => '2014-03-19'
+			),
+			// 9 => array(
+			// 	'site_id' => 38,
+			// 	'start_date' => '2015-08-12',
+			// 	'end_date' => '2015-08-14'
+			// ),
+			// 10 => array(
+			// 	'site_id' => 39,
+			// 	'start_date' => '2015-05-28',
+			// 	'end_date' => '2015-05-30'
+			// ),
+			// 11 => array(
+			// 	'site_id' => 48,
+			// 	'start_date' => '2015-12-17',
+			// 	'end_date' => '2015-12-19'
+			// ),
+			// 12 => array(
+			// 	'site_id' => 50,
+			// 	'start_date' => '2015-06-22',
+			// 	'end_date' => '2015-06-24'
+			// ),
+			// 13 => array(
+			// 	'site_id' => 38,
+			// 	'start_date' => '2016-03-30',
+			// 	'end_date' => NULL
+			// ),
+			// 14 => array(
+			// 	'site_id' => 39,
+			// 	'start_date' => '2016-02-10',
+			// 	'end_date' => NULL
+			// ),
+			// 15 => array(
+			// 	'site_id' => 40,
+			// 	'start_date' => '2016-03-30',
+			// 	'end_date' => NULL
+			// )
+		);
 		
-	// 	//$list = [4, 7, 11, 13, 14, 20, 21, 24, 27, 28, 29, 30, 31, 32, 34, 35, 43, 44, 46, 49, 50];
+		//$list = [4, 7, 11, 13, 14, 20, 21, 24, 27, 28, 29, 30, 31, 32, 34, 35, 43, 44, 46, 49, 50];
 
-	// 	foreach ($list as $arr) {
-	// 		$combined = array_merge($array, $arr);
-	// 		//$combined = $array; $combined["site_id"] = $arr;
-	// 		$this->monitoring_model->insert('community_timeline', $combined);
-	// 	}
+		foreach ($list as $arr) {
+			$combined = array_merge($array, $arr);
+			//$combined = $array; $combined["site_id"] = $arr;
+			$this->monitoring_model->insert('community_timeline', $combined);
+		}
 
-	// 	//$this->monitoring_model->insert('community_timeline', $array);
-	// }
+		//$this->monitoring_model->insert('community_timeline', $array);
+	}*/
 
 	// public function createThumbnail()
 	// {

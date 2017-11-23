@@ -55,7 +55,7 @@
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#<?php echo $event->timeline_id; ?>">
                                     <?php echo $event->title; ?>&nbsp;
-                                    <span class="fa fa-question-circle activity-info" title="<?php echo $event->title; ?>" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="<?php echo htmlspecialchars($event->description, ENT_QUOTES); ?>"></span>
+                                    <span class="fa fa-lg fa-question-circle activity-info" title="<?php echo $event->title; ?>" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="<?php echo htmlspecialchars($event->description, ENT_QUOTES); ?>"></span>
                                 </a>
                             </h4>
                         </div>

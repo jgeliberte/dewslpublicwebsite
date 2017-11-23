@@ -119,4 +119,8 @@
 .ekko-lightbox .modal-footer {
   text-align: right !important; }
 
+.alert-warning {
+  color: #17526D !important;
+  background-color: rgba(248, 153, 29, 0.7); }
+
 /*# sourceMappingURL=individual_site_view.css.map */
