@@ -1,28 +1,24 @@
 .thumbnail-wrapper {
-	height: 200px;
-	width: 200px;
-}
+  height: 200px;
+  width: 200px; }
 
 .container-fluid {
-	margin: 0px;
-	padding: 0px;
-}
+  margin: 0px;
+  padding: 0px; }
 
 /*.community-thumbnail-container {
 	height: 700px;
 }*/
-
 img {
-    max-width: 100%;
-    max-height: 100%;
-}
+  max-width: 100%;
+  max-height: 100%; }
 
 .video-container {
-	text-align: center;
-}
+  text-align: center; }
 
 .stylish-typeface {
-	font-size: 300%;
-	font-style: oblique;
-	font-family: serif;
-}
+  font-size: 300%;
+  font-style: oblique;
+  font-family: serif; }
+
+/*# sourceMappingURL=who_we_are_page.css.map */

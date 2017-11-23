@@ -91,6 +91,16 @@ class Public_website extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
+	public function staff_list() {
+		
+		$data['title'] = "Staff List Page";
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/nav');
+		$this->load->view('public_website/staff_list');
+		$this->load->view('templates/footer');
+	}
+
 	/*public function upload()
 	{	
 		$array = array(

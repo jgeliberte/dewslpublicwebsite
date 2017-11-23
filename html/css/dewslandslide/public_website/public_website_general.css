@@ -16,10 +16,8 @@
   border: solid #17526D;
   background-color: #17526D;
   color: white; }
-
-.footer .navbar a {
-    color: white;
-}
+  .footer .navbar a {
+    color: white; }
 
 .row-padding {
   padding-left: 10%;

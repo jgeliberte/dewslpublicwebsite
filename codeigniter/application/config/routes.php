@@ -48,6 +48,7 @@ $route['sites/(:any)'] = "public_website/individual_site/$1";
 $route['what-we-do'] = "public_website/what_we_do";
 $route['who-we-are'] = "public_website/who_we_are";
 $route['where-we-work'] = "public_website/where_we_work";
+$route['staff'] = "public_website/staff_list";
 
 $route['default_controller'] = "public_website/index";
 $route['404_override'] = '';
