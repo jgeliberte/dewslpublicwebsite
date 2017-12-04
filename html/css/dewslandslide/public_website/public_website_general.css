@@ -9,7 +9,6 @@
   src: url("/fonts/Open Sans/OpenSans-ExtraBold.ttf");
   font-weight: bold;
   font-style: normal; }
-
 html, body {
   height: 100%; }
 
@@ -84,15 +83,17 @@ html, body {
   background-color: #F8991D;
   text-align: center;
   height: 90px;
-  border-radius: 0;
-  padding: 30px 0 0 0; }
+  border-radius: 0; }
   #navigation ul {
     white-space: nowrap;
-    list-style: none; }
+    list-style: none;
+    min-width: 1400px;
+    padding: 0; }
     #navigation ul li {
       display: inline-block;
       position: relative;
-      margin: 0 50px 0;
+      height: 90px;
+      padding: 30px 50px 0;
       font-weight: bold;
       font-size: 20px; }
       #navigation ul li a {
@@ -101,6 +102,31 @@ html, body {
       #navigation ul li a:hover {
         text-decoration: none;
         color: white; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  white-space: nowrap; }
+  .sticky li {
+    padding-left: 20px !important;
+    padding-right: 20px !important; }
+  .sticky span#logo {
+    text-align: right;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 22px;
+    color: #17526D; }
+
+.sticky-wrapper {
+  padding-top: 125px !important; }
+
+.active-tab-nav {
+  background-color: #17526D; }
+  .active-tab-nav a {
+    text-decoration: none;
+    color: white !important; }
 
 p {
   text-align: justify;
