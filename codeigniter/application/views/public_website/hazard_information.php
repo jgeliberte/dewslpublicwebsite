@@ -41,11 +41,24 @@
     </div>
 </div>
 
+<div class="row button-row"><div class="col-sm-12">
+    <div class="btn-group pull-right">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            <span class="fa fa-download"></span>&ensp;Download Map&ensp;<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="/../../images/hazard_information/maps/<?php echo $site->code; ?>.jpg" download="<?php echo 'hazard-map-'.$site->code.'.jpg'; ?>"><span class="fa fa-file-image-o"></span>&ensp;Low Resolution Image</a></li>
+            <li><a href="/../../images/hazard_information/maps/high_res/<?php echo $site->code; ?>.jpg" download="<?php echo 'hazard-map-'.$site->code.'-high_res.jpg'; ?>"><span class="fa fa-file-image-o"></span>&ensp;High Resolution Image</a></li>
+        </ul>
+    </div>
+</div></div>
+
 <div class="row">
     <div class="col-sm-12">
-        <a href="/../../images/hazard_information/maps/<?php echo $site->code; ?>.jpg" data-toggle="lightbox" data-footer="Scroll in image to zoom in/out">
+        <!-- <a href="/../../images/hazard_information/maps/<?php echo $site->code; ?>.jpg" data-toggle="lightbox" data-footer="Scroll in image to zoom in/out">
             <img id="map" src="/../../images/hazard_information/maps/<?php echo $site->code; ?>.jpg" class="img-fluid" alt="Responsive image">
-        </a>
+        </a> -->
+        <img id="map" src="/../../images/hazard_information/maps/<?php echo $site->code; ?>.jpg" class="img-fluid" alt="Responsive image">
     </div>
 </div>
 

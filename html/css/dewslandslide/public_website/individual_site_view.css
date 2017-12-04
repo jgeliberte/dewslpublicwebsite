@@ -103,6 +103,9 @@
     border-color: #17526D;
     color: white; }
 
+.button-row {
+  margin-bottom: 15px; }
+
 #map {
   max-width: 100%;
   border: 1px solid #000;
@@ -118,5 +121,19 @@
 
 .ekko-lightbox .modal-footer {
   text-align: right !important; }
+
+.ekko-lightbox-nav-overlay {
+  z-index: 0 !important;
+  justify-content: space-between !important;
+  left: -90px !important; }
+  .ekko-lightbox-nav-overlay a {
+    flex: 0 0 auto !important;
+    opacity: 0.5 !important; }
+    .ekko-lightbox-nav-overlay a:hover {
+      opacity: 1 !important; }
+
+.alert-warning {
+  color: #17526D !important;
+  background-color: rgba(248, 153, 29, 0.7); }
 
 /*# sourceMappingURL=individual_site_view.css.map */

@@ -12,13 +12,13 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>js/third-party/ekko-lightbox.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>js/third-party/jquery.zoom.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>js/third-party/wheelzoom.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/dewslandslide/public_website/individual_site_view.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/third-party/ekko-lightbox.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/dewslandslide/public_website/individual_site_view.css">
 
 <div id="page-wrapper">
 	<div class="container">
 		<!-- Page Heading -->
-
+        
         <div class="row">
             <div class="col-sm-12 text-center">
                 <div id="page-header">
@@ -29,9 +29,9 @@
         </div>
 
         <ul class="nav nav-tabs nav-justified">
-            <li class="active"><a data-toggle="tab" href="#community-timeline">Timeline of Events</a></li>
-            <li><a data-toggle="tab" href="#hazard-information">Hazard Information</a></li>
-            <li><a data-toggle="tab" href="#data-analysis">Data Analysis</a></li>
+            <li class="active"><a href="#community-timeline">Timeline of Events</a></li>
+            <li><a href="#hazard-information">Hazard Information</a></li>
+            <li><a href="#data-analysis">Data Analysis</a></li>
         </ul>
 
         <div class="tab-content">

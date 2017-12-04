@@ -52,7 +52,7 @@ class Public_website extends CI_Controller {
 
 	public function site_list() {
 
-		$data['title'] = "Site List Page";
+		$data['title'] = "DYNASLOPE - Site List Page";
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/nav');
@@ -60,10 +60,20 @@ class Public_website extends CI_Controller {
 		$this->load->view('templates/footer');
 
 	}
+	
+	public function who_we_are() {
+		
+		$data['title'] = "DYNASLOPE - Who We Are";
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/nav');
+		$this->load->view('public_website/who_we_are_page');
+		$this->load->view('templates/footer');
+	}
 
 	public function what_we_do() {
 		
-		$data['title'] = "What we do";
+		$data['title'] = "DYNASLOPE - What We Do";
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/nav');
@@ -73,27 +83,17 @@ class Public_website extends CI_Controller {
 
 	public function where_we_work() {
 		
-		$data['title'] = "Where we work";
+		$data['title'] = "DYNASLOPE - Where We Work";
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/nav');
 
-		$this->load->view('templates/footer');
-	}
-
-	public function who_we_are() {
-		
-		$data['title'] = "Who we are";
-
-		$this->load->view('templates/header', $data);
-		$this->load->view('templates/nav');
-		$this->load->view('public_website/who_we_are_page');
 		$this->load->view('templates/footer');
 	}
 
 	public function staff_list() {
 		
-		$data['title'] = "Staff List Page";
+		$data['title'] = "DYNASLOPE - Staff List Page";
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/nav');

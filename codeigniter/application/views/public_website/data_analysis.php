@@ -20,7 +20,7 @@
     <div class="col-sm-12 text-center">
         <div class="container-line tab-head">
             <span class="circle left"></span>
-            <div class="container-line-text section-head-text">
+            <div id="surficial-tag" class="container-line-text section-head-text">
                 Surficial Graph
 
             </div>
@@ -61,7 +61,7 @@
     <div class="col-sm-12 text-center">
         <div class="container-line section-head">
             <span class="circle left"></span>
-            <div class="container-line-text section-head-text">
+            <div id="rainfall-tag" class="container-line-text section-head-text">
                 Rainfall Graph
             </div>
             <span class="circle right"></span>
@@ -101,7 +101,7 @@
     <div class="col-sm-12 text-center">
         <div class="container-line section-head">
             <span class="circle left"></span>
-            <div class="container-line-text section-head-text">
+            <div id="subsurface-tag" class="container-line-text section-head-text">
                 Subsurface Graph
             </div>
             <span class="circle right"></span>
